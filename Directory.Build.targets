@@ -1,0 +1,9 @@
+<!-- Common targets for all projects -->
+<Project>
+  <Target Name="CustomPreBuild" BeforeTargets="PreBuildEvent">
+    <!-- Add custom pre-build steps here -->
+  </Target>
+  <Target Name="CustomPostBuild" AfterTargets="PostBuildEvent">
+    <!-- Add custom post-build steps here -->
+  </Target>
+</Project>

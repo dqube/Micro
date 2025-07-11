@@ -1,0 +1,11 @@
+<!-- Common properties for all projects -->
+<Project>
+  <PropertyGroup>
+    <Company>YourCompanyName</Company>
+    <Authors>YourAuthorName</Authors>
+    <RepositoryUrl>https://your.repo.url/</RepositoryUrl>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+</Project>

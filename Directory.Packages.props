@@ -1,0 +1,33 @@
+<!-- Central package version management -->
+<Project>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Extensions.Http" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="9.0.7" />
+    <PackageVersion Include="Polly" Version="8.6.1" />
+    <PackageVersion Include="Polly.Extensions.Http" Version="3.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+    <PackageVersion Include="MessagePack" Version="3.1.4" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+    <PackageVersion Include="StackExchange.Redis" Version="2.7.20" />
+    <PackageVersion Include="System.Text.Json" Version="9.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="$(MSBuildProjectName.EndsWith('Micro.Http'))">
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+     <!-- Core Packages -->
+    <PackageReference Include="Microsoft.Extensions.Http" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+
+    <!-- Resilience -->
+    <PackageReference Include="Polly" />
+    <PackageReference Include="Polly.Extensions.Http" />
+  </ItemGroup>
+  <ItemGroup Condition="$(MSBuildProjectName.EndsWith('Micro.CQRS'))">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+    <PackageReference Include="Polly" />
+   </ItemGroup>
+</Project>
