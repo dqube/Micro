@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Micro.Caching", "Micro.Cach
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro.Caching", "src\BuildingBlocks\Micro.Caching\Micro.Caching.csproj", "{6D6B5D24-C242-4A6F-83D2-53A9964DB1AB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Micro.Http", "Micro.Http", "{72734446-52DC-436C-BD34-A580ACC3BD5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro.Http", "src\BuildingBlocks\Micro.Http\Micro.Http.csproj", "{71742A11-D405-4CD7-B35E-D5275A517357}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{6D6B5D24-C242-4A6F-83D2-53A9964DB1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D6B5D24-C242-4A6F-83D2-53A9964DB1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D6B5D24-C242-4A6F-83D2-53A9964DB1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71742A11-D405-4CD7-B35E-D5275A517357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71742A11-D405-4CD7-B35E-D5275A517357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71742A11-D405-4CD7-B35E-D5275A517357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71742A11-D405-4CD7-B35E-D5275A517357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,8 @@ Global
 		{CB073915-0E7E-4750-A525-C5D3A7A6E1B8} = {328D8CE4-B470-497F-90C8-437AD2F29418}
 		{919F721F-4573-4C47-9DE2-62A6F2675D7E} = {6B9168ED-A4A8-4AE6-A8C8-64A456D16961}
 		{6D6B5D24-C242-4A6F-83D2-53A9964DB1AB} = {919F721F-4573-4C47-9DE2-62A6F2675D7E}
+		{72734446-52DC-436C-BD34-A580ACC3BD5C} = {6B9168ED-A4A8-4AE6-A8C8-64A456D16961}
+		{71742A11-D405-4CD7-B35E-D5275A517357} = {72734446-52DC-436C-BD34-A580ACC3BD5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7F9928A-8174-4582-A868-1723EFB6DBE1}
